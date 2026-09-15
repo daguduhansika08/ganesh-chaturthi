@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff9933,
+        #ffcc66,
+        #fff0c2
+    );
+
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+
+    padding: 30px;
+
+    background: rgba(255,255,255,0.25);
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    animation: appear 2s ease;
+}
+
+h1 {
+    color: #8b2500;
+    margin-bottom: 20px;
+}
+
+.ganesha {
+    width: 250px;
+    max-width: 80%;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+h2 {
+    color: #b34700;
+    margin: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #d35400;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a04000;
+    transform: scale(1.05);
+}
+
+#blessing {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #8b2500;
+}
+
+.flowers {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
